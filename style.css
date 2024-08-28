@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Color */
+    --lime: hsl(61, 70%, 52%);
+    --red: hsl(4, 69%, 50%);
+    --light-red: hsla(8, 49%, 81%, 0.2);
+    /* Neutral Color */
+    --white: hsl(0, 0%, 100%);
+    --slate-100: hsl(202, 86%, 94%);
+    --slate-300: hsl(203, 41%, 72%);
+    --slate-500: hsl(200, 26%, 54%);
+    --slate-700: hsl(200, 24%, 40%);
+    --slate-900: hsl(202, 55%, 16%);
+    --slate-1000: hsl(201, 77%, 12%);
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#entire-page {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--slate-100);
+}
+
+.card-1 {
+    background: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-2 {
+    background: var(--slate-900);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-name {
+    color: var(--slate-900);
+    margin-bottom: 0.4rem;
+    margin-left: -5rem;
+}
+
+.input-flex-block {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--slate-700);
+    font-weight: 600;
+}
+
+#clr-btn {
+    background: var(--white);
+    border: none;
+    color: var(--slate-900);
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: -5rem;
+}
+
+#clr-btn:hover {
+    color: var(--slate-700);
+}
+
+.input-wrapper {
+    width: 19.4rem;
+    position: relative;
+    display: flex;
+    margin: 0.7rem 0;
+    height: 3rem;
+    border: 2px solid var(--slate-700);
+    border-radius: 0.5rem;
+    align-items: center;
+}
+
+.input-wrapper:hover {
+    border: 2px solid var(--slate-900);
+}
+
+.input-wrapper:focus-within  {
+    border: 2px solid var(--lime);
+}
+.input-wrapper input {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+input#mortgage-amount {
+    padding-left: 3rem;
+    color: var(--slate-900);
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+input#mortgage-term, input#interest-rate {
+    padding-left: 1rem;
+    color: var(--slate-900);
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.euro-sign {
+    position: absolute;
+    height: 2.8rem;
+    width: 2.5rem;
+    left: -1px;
+    background-color: var(--slate-100);
+    color: var(--slate-700);
+    font-weight: 900;
+    padding: 10px 5px 0 13px;
+    pointer-events: none;
+    z-index: 1;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.years-text {
+    position: absolute;
+    height: 2.8rem;
+    width: 5rem;
+    left: 74.2%;
+    background-color: var(--slate-100);
+    color: var(--slate-700);
+    font-weight: 900;
+    padding: 10px 1px 0 15px;
+    pointer-events: none;
+    z-index: 1;
+    border-radius:0 0.5rem 0.5rem 0;
+}
+
+.percentage {
+    position: absolute;
+    height: 2.8rem;
+    width: 3rem;
+    left: 84.7%;
+    background-color: var(--slate-100);
+    color: var(--slate-700);
+    font-weight: 900;
+    pointer-events: none;
+    padding: 10px 5px 0 15px;
+    /* z-index: 1; */
+    border-radius:0 0.5rem 0.5rem 0;
+}
+
+.radio-wrapper {
+    display: flex;
+    background-color: var(--white);
+    border: 2px solid var(--slate-700);
+    border-radius: 0.3rem;
+    width: 19.4rem;
+    height: 2.5rem;
+    margin: 0.4rem 0;
+    align-items: center;
+}
+
+.radio-wrapper:hover {
+    border: 2px solid var(--lime);
+}
+
+.radio-wrapper:focus-within {
+    background-color: var(--light-red);
+}
+
+.radio-wrapper input {
+    margin-left: 1rem;
+}
+
+.radio-text {
+    margin-left: 1rem;
+    color: var(--slate-900);
+    font-weight: 600;
+}
+
+#calculate {
+    width: 19.4rem;
+    margin-top: 1rem;
+    padding: 1rem 0 1rem 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    border: none;
+    background-color: var(--lime)
+}
+
+#calculate:hover {
+    opacity: 0.7;
+}
+
+.calculator-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+}
+
+.calculate-repayments {
+    color: var(--slate-900);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#empty-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results-block {
+    padding: 0 0.5rem ;
+}
+
+.rsh {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.empty-result-text {
+    text-align: center;
+    color: var(--white);
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+.input-wrapper.error {
+    border-color: var(--red); /* Example styling */
+}
+
+.results-heading {
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.results-paragraph {
+    color: var(--slate-500);
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.results-container {
+    background-color: var(--slate-1000);
+    border-top: 4px solid var(--lime);
+    border-radius: 0.5rem;
+}
+
+.mrp-container, .tp-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.mrp-header, .tp-header {
+    color: var(--slate-500);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.hr {
+    margin: 0.3rem 1rem;
+    height: 0.02rem;
+    background-color: white;
+}
+
+.mrp-number {
+    font-size: 2rem;
+    color: var(--lime);
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.tp-number {
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.error-message.visible {
+    display: block; /* Show error message */
+}
+
+.error-message {
+    display: none; /* Hide error message initially */
+    color: var(--red);
+    margin: -0.1rem 0 0.9rem 0;
+}
+
+.euro-sign.error, .years-text.error, .percentage.error {
+    background-color: var(--red); /* Example styling for error state */
+    color: var(--white);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    font-weight: 800;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    font-weight: 800;
+}
+
+@media (min-width: 1000px) {
+    #entire-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--slate-100);
+    }
+
+    #cards-container {
+        width: 60rem;
+        min-height: 30rem;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--white);
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .head-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .app-name {
+        margin: unset;
+        margin-right: 6rem;
+    }
+
+    #clr-btn {
+        margin: unset;
+        padding: 1rem 0;
+    }
+
+    .card-1 {
+        min-height: 30rem;
+        width: 30rem;
+        align-items: unset;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .card-2 {
+        min-height: 30rem;
+        width: 30rem;
+        border-radius: 0 1rem 1rem 5rem;
+        justify-content: center;
+    }
+
+    .input-wrapper, .radio-wrapper {
+        width: 100%;
+    }
+
+    .wide-screen-flex {
+        display: flex;
+        width: 100%;
+    }
+
+    .wide-screen-flex .input-wrapper {
+        width: 12.8rem;
+    }
+
+    .space {
+        margin-right: 0.5rem;
+    }
+    .years-text {
+        left: 61%;
+    }
+
+    .percentage {
+        left: 77%;
+    }
+}
