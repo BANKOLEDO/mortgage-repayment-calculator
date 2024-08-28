@@ -39,8 +39,8 @@ Error State
 
 ### Links
 
-- Live Site URL: [Mortgage Repayment Calculator](https://your-live-site-url.com)
-- GitHub Repository: [GitHub Repo](https://github.com/yourusername/mortgage-repayment-calculator)
+- Live Site URL: [Mortgage Repayment Calculator](https://mortgage-repayment-calculator-steel.vercel.app/)
+- GitHub Repository: [GitHub Repo](https://github.com/BANKOLEDO/mortgage-repayment-calculator)
 
 ## My process
 
